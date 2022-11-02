@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <title>Auth App - Sign In</title>
+  </head>
+  <body>
+    <header class="mb-5">
+      <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Basic Auth App</span>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="row d-flex justify-content-center">
+        <div class="col-md-6">
+          <form class="p-5 rounded-4 bg-light">
+            <h1 class="text-center mb-4 text-primary">Sign Up</h1>
+            <!-- Email input -->
+            <div class="mb-4">
+              <label class="form-label" for="email">Email address</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your email here"
+                required
+              />
+            </div>
+
+            <!-- Password input -->
+            <div class="form-group mb-4">
+              <label class="form-label" for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                class="form-control"
+                placeholder="Enter your password here"
+                placeholder="Enter your email here"
+              />
+            </div>
+
+            <!-- Submit button -->
+            <div class="text-center">
+              <button type="submit" id="submit-button" class="btn btn-primary btn-block mb-4">
+                Sign Up
+              </button>
+
+              <!--Redirection-->
+              <div class="text-center">
+                <p>Already member ? <a href="../pages/sign-in.html">Login Here !</a></p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="../scripts/signUp.js"></script>
+  </body>
+</html>
